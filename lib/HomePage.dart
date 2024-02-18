@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food__delivery_app/Appbarwidget.dart';
 import 'package:food__delivery_app/categorieswidget.dart';
+import 'package:food__delivery_app/items.dart';
 import 'package:food__delivery_app/popularitemwidget.dart';
 
 class HomePage extends StatelessWidget {
@@ -67,7 +68,10 @@ class HomePage extends StatelessWidget {
         Popularitems()
       ]),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => Cartitem()));
+        },
         child: Icon(
           Icons.shopping_cart,
           size: 28,
