@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food__delivery_app/Appbarwidget.dart';
 import 'package:food__delivery_app/categorieswidget.dart';
 import 'package:food__delivery_app/items.dart';
+import 'package:food__delivery_app/newsitemwidget.dart';
 import 'package:food__delivery_app/popularitemwidget.dart';
 
 class HomePage extends StatelessWidget {
@@ -65,7 +66,15 @@ class HomePage extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
           ),
         ),
-        Popularitems()
+        Popularitems(),
+        Padding(
+          padding: EdgeInsets.only(top: 20, left: 10),
+          child: Text(
+            "Newrest",
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+          ),
+        ),
+        Newsitem()
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

@@ -26,7 +26,7 @@ class Cartitem extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 5),
                   child: Container(
                     width: 380,
-                    height: 100,
+                    height: 150,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -81,7 +81,7 @@ class Cartitem extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 5),
                   child: Container(
                     width: 380,
-                    height: 100,
+                    height: 150,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -136,7 +136,7 @@ class Cartitem extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 5),
                   child: Container(
                     width: 380,
-                    height: 100,
+                    height: 150,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),

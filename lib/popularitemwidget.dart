@@ -10,70 +10,71 @@ class Popularitems extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
       child: Row(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 7),
-            child: Container(
-              width: 170,
-              height: 225,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 10,
-                        offset: Offset(0, 3))
-                  ]),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Column(
-                  children: [
-                    Container(
-                      child: Image.network(
-                        "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
-                        height: 130,
-                      ),
-                    ),
-                    SizedBox(height: 1),
-                    Text(
-                      "Hot Coffee",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      "Taste Your Hot Coffee",
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    ),
-                    SizedBox(height: 9),
-                    Row(
-                      children: [
-                        Text(
-                          "\$10",
-                          style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold),
+          for (int i = 0; i < 7; i++)
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 7),
+              child: Container(
+                width: 170,
+                height: 250,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 10,
+                          offset: Offset(0, 3))
+                    ]),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Column(
+                    children: [
+                      Container(
+                        child: Image.network(
+                          "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
+                          height: 130,
                         ),
-                        Icon(
-                          Icons.favorite_border,
-                          color: Colors.red,
-                        )
-                      ],
-                    )
-                  ],
+                      ),
+                      SizedBox(height: 1),
+                      Text(
+                        "Hot Coffee",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        "Taste Your Hot Coffee",
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                      SizedBox(height: 9),
+                      Row(
+                        children: [
+                          Text(
+                            "\$10",
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Icon(
+                            Icons.favorite_border,
+                            color: Colors.red,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 7),
             child: Container(
               width: 170,
-              height: 225,
+              height: 250,
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
